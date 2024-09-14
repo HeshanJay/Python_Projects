@@ -23,9 +23,9 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
 
-q1 = input('''You're at a cross road. Where do you want to go? 
-Type "left" or "right" ''')
-if q1 == "left" or q1 == "Left":
+q1 = input('You\'re at a cross road. Where do you want to go?'
+'Type "left" or "right" ').lower()
+if q1 == "left":
     q2 = input('''You have come to a lake. There is an island in the middle of the lake. 
     Type "wait" to wait for a boat. Type "swim" to swim across the lake ''')
     if q2 == "wait" or "Wait":
@@ -36,15 +36,15 @@ if q1 == "left" or q1 == "Left":
         Type "blue" to select the door in blue.
         Type "yellow" to select the door in yellow. ''')
         if q3 == "yellow" or "Yellow":
-            print("Congratulations!. You have found the treasure!!!")
+            print("Congratulations!. You found the treasure!!!")
         elif q3 == "red" or "Red":
-            print("You have burned by fire. Game Over!")
+            print("You burned by fire. Game Over!")
         elif q3 == "blue" or "Blue":
-            print("you have eaten by beasts. Game Over!")
+            print("you were eaten by beasts. Game Over!")
         else:
             print("Game Over!")
     else:
-        print("You have attacked by trout. Game Over!")
+        print("You were attacked by trout. Game Over!")
 
 else:
-    print("You have fallen to a hole. Game Over!")
+    print("You fell to a hole. Game Over!")
